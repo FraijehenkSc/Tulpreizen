@@ -1,0 +1,44 @@
+@use 'components';
+@use 'colors';
+@use 'fonts';
+
+.footer{
+   min-height: 30rem;
+   width: 100%;
+   padding-top: 10rem;
+   padding-bottom:  10rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.footer__h2{
+    @extend %h2handwriting;
+}
+.footer__socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem ;
+}
+
+.footer__social{
+    color: colors.$font-color;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__logo{
+    @extend %icon;
+
+}
+
+.footer__logo:hover{
+    color: darken(colors.$pink,5%);
+    transition: 0.2s;
+}
